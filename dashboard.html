@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doctor-Dashboard</title>
-   <style>body{
+    <!-- <style>body{
     background-color: rgb(228, 238, 235);
     
 }
@@ -241,31 +241,114 @@ form #lname {
 
 
 
-</style>
-    
-</head>
-<body>
-    <div class="sideNav"></div>
-    <div class="main">
-        <div class="header">
-            <ul>
-                <li id="patients"></li>
-                <li id="actions"></li>
-                <li id="notifications"></li>
-                <li id="reports"></li>
+</style>-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma-rtl.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- START NAV -->
+    <nav class="navbar is-white">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item brand-text" href="../index.html">
+            Vighnesh Harihar
+          </a>
+          <div class="navbar-burger burger" data-target="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAV -->
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          <aside class="menu is-hidden-mobile">
+            <p class="menu-label">
+              General
+            </p>
+            <ul class="menu-list">
+              <li><a class="is-active">Dashboard</a></li>
+              <li><a>Previous Report</a></li>
+              <li><a>Logout</a></li>
             </ul>
+          </aside>
         </div>
-        <div class="calender"></div>
-        <div class="sales">
-            <h3>Sales</h3>
-            <div id="dataAPI"></div>
+        <div class="column is-9">
+          <section class="hero is-info welcome is-small">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  Hello, Vighnesh.
+                </h1>
+                <h2 class="subtitle">
+                  I hope you are having a great day!
+                </h2>
+              </div>
+            </div>
+          </section>
+          <section class="info-tiles">
+            <div class="tile is-ancestor has-text-centered">
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <a href="#" class="title is-link">Price Prediction</a>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <a href="#" class="title is-link">Audio Report</a>
+                </article>
+              </div>
+            </div>
+          </section>
+          <div class="columns">
+            <div class="column">
+              <div class="card events-card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Audio Report
+                  </p>
+                </header>
+                <section class="section">
+                  <div class="block">
+                    <span class="icon is-large">
+                      <button
+                        class="buttton is-outlined fa fa-3x fa-microphone"
+                      ></button>
+                    </span>
+                  </div>
+
+                  <div class="field">
+                    <label class="label">Report</label>
+                    <p class="control">
+                      <textarea
+                        class="textarea"
+                        placeholder="Record your report..."
+                      ></textarea>
+                    </p>
+                  </div>
+
+                  <div class="block">
+                    <button class="button is-info is-outlined">Send</button>
+                  </div>
+                </section>
+                <footer class="card-footer">
+                  <a href="#" class="card-footer-item">View All</a>
+                </footer>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="activity"></div>
-        <div class="newPatientsRequests"></div>
-        <div class="topStates"></div>
+      </div>
     </div>
-
-
-
-</body>
+    <script async type="text/javascript" src="../js/bulma.js"></script>
+  </body>
 </html>
